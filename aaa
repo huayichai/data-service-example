@@ -1,0 +1,15 @@
+sed -i  's/${APP_ID}/dataapp-USajpsYD/g' dataapp_config.json
+sed -i  's/${CLUSTER_ID}/1379661944646227324/g' ./data_sources/cluster.json
+sed -i  's/${CLUSTER_ID}/1379661944646227324/g' ./http_endpoints/config.json
+
+opYECUpQ:4cbbcb08-374c-4491-8ea7-4cae76eb9eea
+
+
+curl --digest --user opYECUpQ:4cbbcb08-374c-4491-8ea7-4cae76eb9eea --request GET 'https://ap-southeast-1.data.tidbcloud.com/api/v1beta/app/dataapp-USajpsYD/endpoint/avg_price_per_year' --header 'endpoint-type: draft'
+
+
+curl --digest --user opYECUpQ:4cbbcb08-374c-4491-8ea7-4cae76eb9eea --request GET 'https://ap-southeast-1.data.tidbcloud.com/api/v1beta/app/dataapp-USajpsYD/endpoint/order_by_brand_year?year=${year}' --header 'endpoint-type: draft'
+
+
+curl --digest --user opYECUpQ:4cbbcb08-374c-4491-8ea7-4cae76eb9eea --request GET 'https://ap-southeast-1.data.tidbcloud.com/api/v1beta/app/dataapp-USajpsYD/endpoint/avg_price_per_year'\
+ --header 'endpoint-type: draft'
